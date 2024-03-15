@@ -1,0 +1,5 @@
+Casting a sub class as a super class.|Explicit Casting
+Converting a wrapper to a primitive.|Unboxing
+Converting a primitive to a wrapper class.|Autoboxing
+Casting a super class as a sub class|Implicit Casting
+What is this: mert = boolean ? "dah":"nyet"|Ternary Operator

@@ -1,0 +1,116 @@
+.root
+{
+	-fx-background: #000000;
+	-fx-padding: 2em;
+	-fx-alignment: CENTER;
+}
+
+.borderPaneRoot
+{
+	
+}
+
+.justCenter
+{
+	-fx-alignment: center;
+}
+
+.question
+{
+	-fx-font-size: 5em;
+	-fx-font-weight: bold;
+	-fx-text-alignment: center;
+	
+	
+}
+
+.smallQuestion
+{
+	-fx-font-size: 3em;
+	-fx-font-weight: bold;
+	-fx-text-alignment: center;
+}
+
+.extraSmallQuestion
+{
+	-fx-font-size: 2em;
+	-fx-font-weight: bold;
+	-fx-text-alignment: center;
+}
+
+
+.health
+{
+		-fx-font-size: 3em;
+		-fx-text-fill: red;
+}
+
+.help
+{
+	-fx-text-fill: grey;
+}
+
+.remaining
+{
+	-fx-font-size: 5em;
+}
+
+.answer
+{
+	-fx-font-size: 2em;
+	-fx-text-alignment: center;
+}
+
+.button
+{
+	-fx-background-color : #00000000;
+	-fx-text-fill: #AAAAAA;
+	-fx-border-width: 2px;
+	-fx-border-color:  #AAAAAA;
+	-fx-border-radius: 20;
+	-fx-padding: 1em;
+	-fx-font-size: 2em;
+}
+
+.buttonSmaller
+{
+	-fx-background-color : #00000000;
+	-fx-text-fill: #AAAAAA;
+	-fx-border-width: 2px;
+	-fx-border-color:  #AAAAAA;
+	-fx-border-radius: 10;
+	-fx-padding: 0.5em;
+	-fx-font-size: 1em;
+	-fx-min-width: 30em;
+	-fx-text-alignment:right;
+}
+
+.button:hover
+{
+	-fx-border-color: #FFFFFF;
+	-fx-text-fill: #FFFFFF;
+}
+.button:armed
+{
+	-fx-border-color: #CCCCCC;
+	-fx-text-fill: #CCCCCC;
+}
+
+.whiteGlow
+{
+	-fx-text-fill:  #FFFFFF;
+	-fx-effect: dropshadow( gaussian , #FFFFFF88 , 10,0.5,0,0 );
+}
+
+.whiteGlowRemaining
+{
+	-fx-text-fill:  #FFFFFF;
+	-fx-effect: dropshadow( gaussian , #FFFFFF88 , 10,0.5,0,0 );
+	-fx-font-size: 3em;
+}
+
+.redGlow
+{
+	-fx-text-fill:  #FF0000;
+	-fx-effect: dropshadow( gaussian , #FF000088 , 10,0.5,0,0 );
+}

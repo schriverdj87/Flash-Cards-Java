@@ -1,0 +1,11 @@
+What are the Kanto Starters?|Bulbasaur, Charmander, Squirtle
+Guess what?[FLIP]|Screw you!
+What part of the shrunken head is used to validate it?|Ears|Lips|Facial Structure|Eyes|Hair
+1 + 1 = 2|true
+1 + 1 = Eleventy Five|false
+Hello
+Do you want to save Penelope?|y
+Who are you?|n
+
+
+Type in "Poop"|poop

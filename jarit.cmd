@@ -1,0 +1,1 @@
+jar cvfm FlashCards.jar manifest.txt *.class *.css main\*class fccustom\*class screens\*class 

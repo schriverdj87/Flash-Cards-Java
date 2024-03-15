@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>POOTTITLEHERE</title>
+<style>
+body
+{
+	font-family: verdana, arial;
+	background-color: BKGHERE;
+	color: TXTHERE;
+	
+}
+
+input["type=button"]
+{
+	border-style: solid;
+	border-color: BTNCOLHERE;
+	color: BTNCOLHERE;
+}
+
+</style>
+</head>
+<body>
+<div id = "pootQsHere">
+
+</div>
+
+<script>
+"use strict";
+
+var currentquiz = [];
+var quizzes = [93243234];//This number is a placeholder to be overwritten;
+var quizzesBackup = [
+"Sample Quiz\nName the Kanto Starters|Charmander,Bulbasaur,Squirtle\nPie Is Good|t\nWhat is used to validate a shrunken head|ears|hair|eyes|skin|lips",
+"Sample Quiz 2\nDo you want to save Penelope?|Yes"
+];
+var backupQuizzes;
+
+window.onload = function()
+{
+	if (quizzes[0] == 93243234)
+	{
+		quizzes = quizzesBackup;
+	}
+	
+	//var testQuestion = new Question(quizzesBackup[0][0].split("\n")[1]);
+	for (var a = 0; a < quizzes.length; a++)
+	{
+		PutQuestions(quizzes[a]);
+	}
+	
+	
+}
+
+
+
+function PutQuestions(quizstring)
+{
+	var quizstringcut = quizstring.split("\n");
+	var quizBox = document.getElementById("pootQsHere");
+	
+	var title = document.createElement("h1");
+	title.innerHTML = quizstringcut[0];
+	quizBox.appendChild(title);
+	
+	for (var a = 1; a < quizstringcut.length; a++)
+		{
+			var leQ = new Question(quizstringcut[a]);
+			var pQ = document.createElement("p");
+			pQ.innerHTML = "Q: " + leQ.question;
+			quizBox.appendChild(pQ);
+			var pA = document.createElement("p");
+			pA.innerHTML = "A: " + leQ.answer[0];
+			quizBox.appendChild(pA);
+		}
+		
+	quizBox.appendChild(document.createElement("br"));
+	
+}
+
+function Question (rawgrindme)
+{
+	var  grindme = rawgrindme.split("|");
+	this.question = grindme[0];
+	this.answer = [];
+	
+	for (var a = 1; a < grindme.length; a++)
+	{
+		this.answer.push(grindme[a]);
+	}
+	
+	
+}
+
+function CompareCore (str1,str2)
+{
+	
+}
+
+</script>
+</body>
+</html>
